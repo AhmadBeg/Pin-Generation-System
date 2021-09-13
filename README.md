@@ -34,7 +34,7 @@ PIN should be 4 digit number.
 
 Examples for generate pin call:
 
-generatePin:
+### Generate Pin:
 
 URL:http://localhost:8080/generatePin
 
@@ -46,7 +46,7 @@ Body:
 Header:
 CallerId:testCaller
 
-validatePin:
+### Validate Pin:
 
 URL:http://localhost:8080/validatePin
 
