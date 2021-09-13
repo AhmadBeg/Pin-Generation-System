@@ -18,6 +18,9 @@ mvn package
 docker build -f Dockerfile -t pin_manager_app .
 docker-compose up
 ```
+Run src\test\resources\schema.sql to set-up database schema.
+
+while docker-compose up, in logs there would be errors as database takes to be ready to take calls. after couple restarts, the app would be up and running and ready to take calls.
 
 ## API Calls
 The input and output is Base64 encoded.
