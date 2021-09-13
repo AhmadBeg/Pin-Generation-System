@@ -20,7 +20,13 @@ docker-compose up
 ```
 Run src\test\resources\schema.sql to set-up database schema.
 
+while running mvn package, there would be some errorsin logs which are expected as few exceptions are also being tested in unit/integration tests.
 while docker-compose up, in logs there would be errors as database takes to be ready to take calls. after couple restarts, the app would be up and running and ready to take calls.
+Database Client set-up.
+Host: 127.0.0.1 
+Port: 3306 
+Login User: root
+password: my-secret-pw 
 
 ## API Calls
 The input and output is Base64 encoded.
