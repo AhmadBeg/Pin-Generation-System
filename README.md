@@ -58,3 +58,10 @@ Body:{
 Header:
 
 CallerId:testCaller
+   
+    
+### Behaviour Assumptions:
+
+There is no field of validated in database, if a PIN is validate it would deleted from database rightaway, assuming its OTP
+    
+
