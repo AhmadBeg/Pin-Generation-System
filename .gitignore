@@ -1,0 +1,42 @@
+.classpath
+.factorypath
+.project
+.settings/
+AMPF_LOG_ROOT_IS_UNDEFINED/
+HELP.md
+target/
+
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+AMPF_LOG_ROOT_IS_UNDEFINED/
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+/eFM-SAO_E3.keystore
+/src/main/resources/application-e2local.properties
+/eFM-SAO_E2.keystore
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
