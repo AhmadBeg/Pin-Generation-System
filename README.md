@@ -20,8 +20,8 @@ docker-compose up
 ```
 Run src\test\resources\schema.sql to set-up database schema.
 
-while running mvn package, there would be some errorsin logs which are expected as few exceptions are also being tested in unit/integration tests.
-while docker-compose up, in logs there would be errors as database takes to be ready to take calls. after couple restarts, the app would be up and running and ready to take calls.
+while running mvn package, there would be some errors in logs which are expected as few exceptions are also being tested in unit/integration tests.
+while docker-compose up, in logs there would be errors as database takes some time to be ready to take calls. after couple restarts, the app would be up and running and ready to take calls.
 
 Database Client set-up.
 
@@ -76,6 +76,6 @@ CallerId:testCaller
     
 ### Behaviour Assumptions:
 
-There is no field of validated in database, if a PIN is validate it would deleted from database rightaway, assuming its OTP
+There is no column like validated in database, if a PIN is validated it would be deleted from database rightaway, assuming its OTP.
     
 
