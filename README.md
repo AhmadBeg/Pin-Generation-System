@@ -18,10 +18,11 @@ mvn package
 docker build -f Dockerfile -t pin_manager_app .
 docker-compose up
 ```
-Run src\test\resources\schema.sql to set-up database schema.
 
-while running mvn package, there would be some errors in logs which are expected as few exceptions are also being tested in unit/integration tests.
+while running mvn package, there would be some errors in logs which are expected as few exceptions are also being tested in unit/integration tests. Also, Spring Scheduler will throw exception of not finding DB Schema as it comes-up before even setting up H2 In-memory datbase.
 while docker-compose up, in logs there would be errors as database takes some time to be ready to take calls. after couple restarts, the app would be up and running and ready to take calls.
+
+Run src\test\resources\schema.sql to set-up database schema.
 
 Database Client set-up.
 
